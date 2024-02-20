@@ -126,5 +126,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 QDRANT_URL = 
 QDRANT_API_KEY = 
 APPEND_SLASH = False
-OPENAI_API_KEY = 
+OPENAI_API_KEY = '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'
+>>>>>>> dde600b (API Endpoint)
 
