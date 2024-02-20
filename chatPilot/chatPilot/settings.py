@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    'corsheaders',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'appLauncher',
@@ -48,6 +49,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'chatPilot.urls'
@@ -123,9 +126,16 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-QDRANT_URL = 
-QDRANT_API_KEY = 
+QDRANT_URL = 'https://db9eda50-0885-480f-b42c-075f2f62a3f7.us-east4-0.gcp.cloud.qdrant.io:6333'
+QDRANT_API_KEY = 'P_flLMoNuOyzexNGeZK50q6Bj99rGRzj8cObC-c4aIM0DxAr6S635A'
 APPEND_SLASH = False
-OPENAI_API_KEY = 
->>>>>>> dde600b (API Endpoint)
+OPENAI_API_KEY = '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'
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # Your React frontend URL
+]
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_HEADERS = ['*']
+CORS_ALLOW_METHODS = ['*']
+
 
