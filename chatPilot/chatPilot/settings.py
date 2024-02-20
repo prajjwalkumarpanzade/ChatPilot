@@ -123,8 +123,8 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-QDRANT_URL = 'https://db9eda50-0885-480f-b42c-075f2f62a3f7.us-east4-0.gcp.cloud.qdrant.io:6333'
-QDRANT_API_KEY = 'P_flLMoNuOyzexNGeZK50q6Bj99rGRzj8cObC-c4aIM0DxAr6S635A'
+QDRANT_URL = 
+QDRANT_API_KEY = 
 APPEND_SLASH = False
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = 
 
